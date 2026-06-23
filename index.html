@@ -163,7 +163,7 @@ body { background:#0a0b1a; color:#fff; font-family:'Segoe UI',sans-serif; overfl
 <div id="left-panels">
   <div class="panel">
     <div class="panel-title">LEADERBOARD</div>
-    <div class="panel-count">12 stars</div>
+    <div class="panel-count">13 stars</div>
     <div id="sort-tabs">
       <button class="sort-tab active" data-sort="score">Score</button>
       <button class="sort-tab" data-sort="tenure">Tenure</button>
@@ -220,7 +220,7 @@ body { background:#0a0b1a; color:#fff; font-family:'Segoe UI',sans-serif; overfl
 <script>
 const EMPLOYEES = [
   {id:0, name:"Michelle Levy",  role:"Head of Sales",     dept:"Engineering", score:99, tenure:5, excellence:true,  bonus:28},
-  {id:1, name:"Jonathan Cohen", role:"Lead Engineer",      dept:"Engineering", score:95, tenure:4, excellence:true,  bonus:24},
+  {id:1, name:"Jonathan Cohen", role:"Lead Engineer",      dept:"Engineering", score:90, tenure:4, excellence:true,  bonus:24},
   {id:2, name:"Tamar Shapiro",  role:"Product Designer",   dept:"Design",      score:90, tenure:3, excellence:true,  bonus:20},
   {id:3, name:"Ori Goldberg",   role:"Product Manager",    dept:"Product",     score:87, tenure:2, excellence:false, bonus:18},
   {id:4, name:"Noa Ben-David",  role:"HR Manager",         dept:"HR",          score:85, tenure:6, excellence:false, bonus:17},
@@ -231,11 +231,12 @@ const EMPLOYEES = [
   {id:9, name:"Liora Stern",    role:"Backend Dev",        dept:"Engineering", score:77, tenure:4, excellence:false, bonus:14},
   {id:10,name:"Matan Levi",     role:"Data Scientist",     dept:"Data",        score:75, tenure:2, excellence:false, bonus:13},
   {id:11,name:"Hila Avraham",   role:"Product Analyst",    dept:"Product",     score:72, tenure:1, excellence:false, bonus:12},
+  {id:12,name:"Inon Katz",     role:"Data Security",      dept:"Data Security", score:95, tenure:3, excellence:true,  bonus:70},
 ];
 
 const DEPT_COLORS = {
   Engineering:"#38bdf8", Design:"#f472b6", Product:"#a78bfa",
-  HR:"#fb923c", Security:"#f87171", Data:"#34d399"
+  HR:"#fb923c", Security:"#f87171", Data:"#34d399", "Data Security":"#4169e1"
 };
 const DEPTS = [...new Set(EMPLOYEES.map(e=>e.dept))];
 
